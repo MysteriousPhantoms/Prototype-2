@@ -14,7 +14,6 @@ public class PopupBase : MonoBehaviour
         if (loader == null)
             loader = FindObjectOfType<PowerLoader>();
 
-        // If this popup sabotages immediately
         if (appliesSabotage && loader != null)
         {
             loader.ApplySabotage(sabotageMultiplier);

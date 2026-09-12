@@ -389,7 +389,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupSpawner
   popupPrefabs:
-  - {fileID: 7283284295786745349, guid: 068af4f21b490f044a3b839d39ba02d8, type: 3}
+  - {fileID: 3646810178325398746, guid: e8e6b61a9559cbc4cad9b2235b271c38, type: 3}
+  - {fileID: 4410748925571942646, guid: 7856a0de7dd05444c9b73ee09f18e5a8, type: 3}
+  - {fileID: 4341658206949644027, guid: 62e07f4aef26b364faebba4479205871, type: 3}
+  - {fileID: 4873523225701439723, guid: ca79ef43119b8f54ea159a57791b6728, type: 3}
   popupLayer: {fileID: 1577597463}
   spawnInterval: 3
 --- !u!4 &748321221
@@ -401,7 +404,7 @@ Transform:
   m_GameObject: {fileID: 748321219}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 312.5227, y: 434.88025, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -448,7 +451,7 @@ Transform:
   m_GameObject: {fileID: 1499900730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 508.61716, y: 263.3306, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -479,7 +482,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577597462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -504,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.28235295}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
