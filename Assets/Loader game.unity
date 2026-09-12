@@ -150,6 +150,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1105070827}
   - {fileID: 2038510486}
   - {fileID: 1577597463}
   m_Father: {fileID: 0}
@@ -389,12 +390,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupSpawner
   popupPrefabs:
+  - {fileID: 5413233082643691041, guid: 71825e9940f744f4dbcd80a02637471f, type: 3}
+  - {fileID: 1180122081890147897, guid: 65f133ee5909b2d429c30b1685ec13ac, type: 3}
+  - {fileID: 4873523225701439723, guid: ca79ef43119b8f54ea159a57791b6728, type: 3}
+  - {fileID: 7507613213419329517, guid: 6d7264dad1ab73e459cf99ab1fd4ec31, type: 3}
+  - {fileID: 7255053127107461966, guid: 4fb686d9ba5728c44b4be5557c6547c9, type: 3}
+  - {fileID: 7629454106857693384, guid: debc1aaee885ba0489ec11c99ce7b263, type: 3}
+  - {fileID: 8235474339361342622, guid: 199741d3269f25841a094ff1287528d5, type: 3}
   - {fileID: 3646810178325398746, guid: e8e6b61a9559cbc4cad9b2235b271c38, type: 3}
+  - {fileID: 2942986444323888281, guid: 226be525bb0118d4a8c369c921ecb5dd, type: 3}
+  - {fileID: 8096257910568583915, guid: 8d5c8d37c325717409dc78492acd4163, type: 3}
   - {fileID: 4410748925571942646, guid: 7856a0de7dd05444c9b73ee09f18e5a8, type: 3}
   - {fileID: 4341658206949644027, guid: 62e07f4aef26b364faebba4479205871, type: 3}
-  - {fileID: 4873523225701439723, guid: ca79ef43119b8f54ea159a57791b6728, type: 3}
   popupLayer: {fileID: 1577597463}
-  spawnInterval: 3
+  spawnInterval: 2
 --- !u!4 &748321221
 Transform:
   m_ObjectHideFlags: 0
@@ -410,6 +419,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1105070826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105070827}
+  - component: {fileID: 1105070829}
+  - component: {fileID: 1105070828}
+  m_Layer: 6
+  m_Name: BACKGROUND
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1105070827
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105070826}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 107246134}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 954, y: 596}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1105070828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105070826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8833409543292265432, guid: 68d99bd61a127d34ba7ede9bf1360aee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1105070829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105070826}
+  m_CullTransparentMesh: 1
 --- !u!1 &1499900730
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,8 +524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerLoader
   loadingFill: {fileID: 2052768558}
-  fillSpeed: 0.05
-  drainSpeed: 0.2
+  fillSpeed: 0.015
+  drainSpeed: 0.1
 --- !u!4 &1499900732
 Transform:
   m_ObjectHideFlags: 0
@@ -646,7 +730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -108.9}
   m_SizeDelta: {x: 600, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038510487

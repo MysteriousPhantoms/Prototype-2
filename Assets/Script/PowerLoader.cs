@@ -6,8 +6,10 @@ public class PowerLoader : MonoBehaviour
 {
     [Header("Bar Settings")]
     public Image loadingFill;
-    [SerializeField] private float fillSpeed = 0.05f;
-    [SerializeField] private float drainSpeed = 0.2f;
+
+    // Slower base speeds for longer gameplay
+    [SerializeField] private float fillSpeed = 0.025f;
+    [SerializeField] private float drainSpeed = 0.1f;
 
     [Header("Sabotage Settings")]
     private bool isSabotaged = false;
