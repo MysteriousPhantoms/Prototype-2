@@ -7,13 +7,17 @@ public class PowerLoader : MonoBehaviour
     [Header("Bar Settings")]
     public Image loadingFill;
 
-    // Slower base speeds for longer gameplay
     [SerializeField] private float fillSpeed = 0.025f;
     [SerializeField] private float drainSpeed = 0.1f;
 
     [Header("Sabotage Settings")]
     private bool isSabotaged = false;
     private float sabotageMultiplier = 1f;
+
+    [Header("Win Screen Settings")]
+    [SerializeField] private GameObject winScreenPrefab;   // drag your image prefab here
+    [SerializeField] private Transform winLayer;           // drag your dedicated WinLayer here
+    private bool hasWon = false;
 
     void Update()
     {
@@ -28,6 +32,12 @@ public class PowerLoader : MonoBehaviour
         }
 
         loadingFill.fillAmount = Mathf.Clamp01(loadingFill.fillAmount);
+
+        // ✅ Only trigger win screen when bar reaches 100%
+        if (loadingFill.fillAmount >= 1f && !hasWon)
+        {
+            ShowWinScreen();
+        }
     }
 
     public void LoseProgress(float amount)
@@ -46,5 +56,23 @@ public class PowerLoader : MonoBehaviour
     {
         isSabotaged = false;
         sabotageMultiplier = 1f;
+    }
+
+    private void ShowWinScreen()
+    {
+        if (hasWon) return;
+        hasWon = true;
+
+        ClearSabotage();
+
+        // Stop spawner
+        PopupSpawner spawner = FindObjectOfType<PopupSpawner>();
+        if (spawner != null) spawner.StopSpawning();
+
+        // Enable WinLayer
+        winLayer.gameObject.SetActive(true);
+
+        // Spawn win screen prefab into WinLayer
+        Instantiate(winScreenPrefab, winLayer);
     }
 }
