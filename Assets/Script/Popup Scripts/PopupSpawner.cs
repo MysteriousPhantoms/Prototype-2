@@ -8,11 +8,11 @@ public class PopupSpawner : MonoBehaviour
     [SerializeField] private float spawnInterval = 3f;
 
     private float nextSpawn;
-    private bool isActive = true; // NEW flag
+    private bool isActive = true;
 
     void Update()
     {
-        if (!isActive) return; // stop spawning if inactive
+        if (!isActive) return;
 
         if (popupPrefabs.Length == 0 || popupLayer == null) return;
 
@@ -22,8 +22,8 @@ public class PopupSpawner : MonoBehaviour
 
             int index = Random.Range(0, popupPrefabs.Length);
             GameObject popup = Instantiate(popupPrefabs[index], popupLayer);
-
-            // Random position
+            
+            
             RectTransform rt = popup.GetComponent<RectTransform>();
             if (rt != null)
             {
@@ -34,7 +34,7 @@ public class PopupSpawner : MonoBehaviour
         }
     }
 
-    // NEW method PowerLoader can call
+    
     public void StopSpawning()
     {
         isActive = false;

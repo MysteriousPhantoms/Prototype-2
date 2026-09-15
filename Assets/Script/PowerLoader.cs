@@ -15,8 +15,8 @@ public class PowerLoader : MonoBehaviour
     private float sabotageMultiplier = 1f;
 
     [Header("Win Screen Settings")]
-    [SerializeField] private GameObject winScreenPrefab;   // drag your image prefab here
-    [SerializeField] private Transform winLayer;           // drag your dedicated WinLayer here
+    [SerializeField] private GameObject winScreenPrefab;
+    [SerializeField] private Transform winLayer;
     private bool hasWon = false;
 
     void Update()
@@ -33,7 +33,7 @@ public class PowerLoader : MonoBehaviour
 
         loadingFill.fillAmount = Mathf.Clamp01(loadingFill.fillAmount);
 
-        // ✅ Only trigger win screen when bar reaches 100%
+        // Trigger win screen when bar reaches 100%
         if (loadingFill.fillAmount >= 1f && !hasWon)
         {
             ShowWinScreen();

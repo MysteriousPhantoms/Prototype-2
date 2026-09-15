@@ -10,7 +10,7 @@ public class PopupBase : MonoBehaviour
 
     void Start()
     {
-        // Auto-find GameManager in the scene
+        
         if (loader == null)
             loader = FindObjectOfType<PowerLoader>();
 
